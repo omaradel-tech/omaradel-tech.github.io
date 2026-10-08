@@ -143,6 +143,7 @@ export const engineeringPractices: EngineeringPractice[] = [
       'Dependency Inversion: depend on abstractions, not concrete implementations',
       'Clean, readable code that communicates intent over cleverness',
     ],
+    projects: ['Daashop', 'Turbo for Shipping', 'Business Now'],
   },
   {
     title: 'REST API Design & Documentation',
@@ -154,6 +155,7 @@ export const engineeringPractices: EngineeringPractice[] = [
       'API documentation with Scribe (Laravel)',
       'Tested with Postman during development',
     ],
+    projects: ['Daashop', 'ILORA', 'Turbo for Shipping'],
   },
   {
     title: 'Database & Query Optimization',
@@ -166,6 +168,7 @@ export const engineeringPractices: EngineeringPractice[] = [
       'Indexing strategy aligned with query patterns',
       'Data modeling decisions that support the application\'s query needs',
     ],
+    projects: ['ILORA', 'Daashop', 'Turbo for Shipping'],
   },
   {
     title: 'Redis Caching & Queue Processing',
@@ -177,6 +180,7 @@ export const engineeringPractices: EngineeringPractice[] = [
       'Laravel Horizon for queue monitoring and management',
       'Background jobs to offload time-consuming operations from request cycles',
     ],
+    projects: ['Daashop'],
   },
   {
     title: 'Testing with PHPUnit',
@@ -186,6 +190,7 @@ export const engineeringPractices: EngineeringPractice[] = [
       'Testing core commerce logic: cart, checkout, order flows',
       'Testing payment gateway integrations',
     ],
+    projects: ['Daashop'],
   },
   {
     title: 'Backend Monitoring & Debugging',
@@ -196,6 +201,7 @@ export const engineeringPractices: EngineeringPractice[] = [
       'Log Viewer: structured access to application logs in production',
       'Systematic debugging workflows from log → trace → fix',
     ],
+    projects: ['Turbo for Shipping'],
   },
   {
     title: 'Server Configuration & Deployment',
@@ -219,6 +225,7 @@ export const engineeringPractices: EngineeringPractice[] = [
       'Per-tenant configuration and resource management',
       'WhatsApp session management scoped per tenant',
     ],
+    projects: ['ILORA'],
   },
   {
     title: 'AI-Assisted Development',

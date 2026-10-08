@@ -124,7 +124,7 @@ export default function ContactPage() {
                 Preferred contact method
               </h2>
               <p className="text-sm text-muted-foreground leading-relaxed">
-                Email is the best way to reach me. I typically respond within one business day.
+                Email is the best way to reach me.
               </p>
               <a
                 href="mailto:omar.adel.omar818@gmail.com"

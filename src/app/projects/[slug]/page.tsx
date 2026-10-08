@@ -125,6 +125,16 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
                     <p className="text-sm text-muted-foreground leading-relaxed">
                       {mod.description}
                     </p>
+                    {mod.details && mod.details.length > 0 && (
+                      <ul className="mt-2 space-y-1 ml-3">
+                        {mod.details.map((detail, i) => (
+                          <li key={i} className="text-xs text-muted-foreground flex items-start gap-2">
+                            <span className="text-blue-500 mt-0.5 shrink-0">·</span>
+                            <span>{detail}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    )}
                   </div>
                 ))}
               </div>
@@ -147,6 +157,13 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
             </CaseStudySection>
           )}
 
+          {/* Architecture */}
+          {project.architecture && (
+            <CaseStudySection title="Architecture">
+              <p className="text-sm text-muted-foreground leading-relaxed">{project.architecture}</p>
+            </CaseStudySection>
+          )}
+
           {/* Backend */}
           {project.backend && (
             <CaseStudySection title="Backend Engineering">
@@ -161,10 +178,24 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
             </CaseStudySection>
           )}
 
+          {/* Caching */}
+          {project.caching && (
+            <CaseStudySection title="Caching">
+              <p className="text-sm text-muted-foreground leading-relaxed">{project.caching}</p>
+            </CaseStudySection>
+          )}
+
           {/* Performance */}
           {project.performance && (
             <CaseStudySection title="Performance">
               <p className="text-sm text-muted-foreground leading-relaxed">{project.performance}</p>
+            </CaseStudySection>
+          )}
+
+          {/* Authentication */}
+          {project.authentication && (
+            <CaseStudySection title="Authentication & Authorization">
+              <p className="text-sm text-muted-foreground leading-relaxed">{project.authentication}</p>
             </CaseStudySection>
           )}
 
@@ -179,6 +210,13 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
           {project.monitoring && (
             <CaseStudySection title="Monitoring & Debugging">
               <p className="text-sm text-muted-foreground leading-relaxed">{project.monitoring}</p>
+            </CaseStudySection>
+          )}
+
+          {/* Deployment */}
+          {project.deployment && (
+            <CaseStudySection title="Deployment & Infrastructure">
+              <p className="text-sm text-muted-foreground leading-relaxed">{project.deployment}</p>
             </CaseStudySection>
           )}
 

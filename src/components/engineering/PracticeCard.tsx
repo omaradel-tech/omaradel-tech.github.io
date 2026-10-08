@@ -21,6 +21,14 @@ export function PracticeCard({ practice }: PracticeCardProps) {
           ))}
         </ul>
       )}
+      {practice.projects && practice.projects.length > 0 && (
+        <div className="mt-3 pt-3 border-t border-border/50 flex flex-wrap items-center gap-1.5">
+          <span className="text-xs text-muted-foreground">Applied in:</span>
+          {practice.projects.map((p) => (
+            <span key={p} className="text-xs font-medium text-blue-500">{p}</span>
+          ))}
+        </div>
+      )}
     </div>
   )
 }

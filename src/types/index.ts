@@ -10,6 +10,7 @@ export interface TechStack {
 export interface Module {
   name: string
   description: string
+  details?: string[]
 }
 
 export interface ProjectIntegration {
@@ -41,6 +42,10 @@ export interface Project {
   performance?: string
   testing?: string
   monitoring?: string
+  architecture?: string
+  authentication?: string
+  caching?: string
+  deployment?: string
   challenges?: Challenge[]
   contribution: string
   missingInfo?: string[]
@@ -84,4 +89,5 @@ export interface EngineeringPractice {
   title: string
   description: string
   details: string[]
+  projects?: string[]
 }
