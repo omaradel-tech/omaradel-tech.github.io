@@ -4,6 +4,7 @@ import { SectionHeading } from '@/components/ui/SectionHeading'
 import { TechBadge } from '@/components/ui/TechBadge'
 import { education } from '@/data/experience'
 import { GraduationCap, MapPin, Mail, Phone } from 'lucide-react'
+import { ProfilePhoto } from '@/components/ui/ProfilePhoto'
 
 export const metadata: Metadata = {
   title: 'About',
@@ -79,6 +80,11 @@ export default function AboutPage() {
 
           {/* Sidebar */}
           <div className="space-y-5">
+            {/* Profile photo */}
+            <div className="flex justify-center">
+              <ProfilePhoto size="lg" />
+            </div>
+
             {/* Contact */}
             <div className="rounded-xl border border-border bg-card p-5">
               <h2 className="text-sm font-semibold text-foreground mb-4">Contact</h2>
