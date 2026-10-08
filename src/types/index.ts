@@ -91,3 +91,30 @@ export interface EngineeringPractice {
   details: string[]
   projects?: string[]
 }
+
+export interface CVData {
+  contact: {
+    name: string
+    title: string
+    location: string
+    email: string
+    phone: string
+    linkedin: string
+    github: string
+    portfolio: string
+  }
+  summary: string
+  skills: { category: string; skills: string[] }[]
+  experience: {
+    company: string
+    role: string
+    period: string
+    location: string
+    intro?: string
+    bullets: string[]
+  }[]
+  education: { degree: string; institution: string; location: string; period: string }
+  projects: { name: string; tech: string; description: string }[]
+  languages: { language: string; proficiency: string }[]
+  aiWorkflow?: { tools: string[]; description: string }
+}

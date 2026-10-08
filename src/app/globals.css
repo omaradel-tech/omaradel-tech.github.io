@@ -53,3 +53,85 @@
     @apply from-blue-400 to-blue-500;
   }
 }
+
+/* Print styles for CV page */
+@media print {
+  /* Hide site chrome */
+  header,
+  footer,
+  .cv-action-bar {
+    display: none !important;
+  }
+
+  /* Force light colors for print */
+  :root,
+  .dark {
+    --background: 0 0% 100%;
+    --foreground: 222 47% 11%;
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 16% 30%;
+    --border: 214 32% 80%;
+  }
+
+  body {
+    background: white !important;
+    color: #1a1a2e !important;
+  }
+
+  * {
+    box-shadow: none !important;
+  }
+
+  /* CV document print optimization */
+  .cv-document {
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .cv-document > div {
+    border: none !important;
+    border-radius: 0 !important;
+    padding: 0 !important;
+    background: white !important;
+  }
+
+  .cv-document .cv-section {
+    break-inside: avoid;
+  }
+
+  .cv-document .cv-heading {
+    break-after: avoid;
+  }
+
+  /* Compact font sizing for 2-page target */
+  .cv-document {
+    font-size: 11px !important;
+    line-height: 1.45 !important;
+  }
+
+  .cv-document h1 {
+    font-size: 20px !important;
+  }
+
+  .cv-document h2 {
+    font-size: 10px !important;
+  }
+
+  .cv-document h3 {
+    font-size: 11px !important;
+  }
+
+  /* Remove link decoration in print */
+  a[href] {
+    color: inherit !important;
+    text-decoration: none !important;
+  }
+
+  @page {
+    margin: 0.5in 0.6in;
+    size: A4;
+  }
+}
