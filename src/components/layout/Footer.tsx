@@ -53,6 +53,7 @@ export function Footer() {
               ['/projects', 'Projects'],
               ['/skills', 'Skills'],
               ['/engineering', 'Engineering'],
+              ['/cv', 'CV'],
               ['/contact', 'Contact'],
             ].map(([href, label]) => (
               <Link

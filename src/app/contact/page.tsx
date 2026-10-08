@@ -85,7 +85,7 @@ export default function ContactPage() {
                 </a>
 
                 <a
-                  href="/cv.pdf"
+                  href="/Omar-Adel-Senior-Backend-Engineer-CV.pdf"
                   download
                   className="flex items-center gap-3 text-sm text-muted-foreground hover:text-foreground transition-colors group"
                 >

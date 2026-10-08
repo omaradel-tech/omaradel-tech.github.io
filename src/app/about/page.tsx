@@ -141,6 +141,21 @@ export default function AboutPage() {
                 development, not a separate specialization.
               </p>
             </div>
+
+            {/* Languages */}
+            <div className="rounded-xl border border-border bg-card p-5">
+              <h2 className="text-sm font-semibold text-foreground mb-3">Languages</h2>
+              <div className="space-y-2 text-sm">
+                <div className="flex justify-between">
+                  <span className="text-muted-foreground">Arabic</span>
+                  <span className="text-foreground font-medium">Native</span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="text-muted-foreground">English</span>
+                  <span className="text-foreground font-medium text-right">Professional Working Proficiency</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </Container>
