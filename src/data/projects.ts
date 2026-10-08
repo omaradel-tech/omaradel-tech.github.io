@@ -3,10 +3,10 @@ import type { Project } from '@/types'
 export const projects: Project[] = [
   {
     slug: 'ilora',
-    name: 'ILORA',
+    name: 'ILORA — AI ERP System',
     tagline:
-      'Multi-tenant enterprise platform spanning ERP, CRM, HR, Performance Management, Ecommerce, and WhatsApp-based communication.',
-    category: ['ERP', 'CRM', 'HR', 'Ecommerce', 'SaaS', 'Multi-tenant'],
+      'Multi-tenant AI ERP platform covering CRM, HR, Performance Management, Ecommerce, and WhatsApp-based communication — built with Go, React, and PostgreSQL.',
+    category: ['AI ERP System', 'SaaS', 'Multi-tenant'],
     industry: ['Enterprise SaaS', 'B2B'],
     role: 'Backend Engineer',
     company: 'IVERA',
@@ -19,7 +19,7 @@ export const projects: Project[] = [
     },
     featured: true,
     overview:
-      'ILORA is a multi-tenant enterprise SaaS platform built with Go, React, and PostgreSQL. It serves business customers across multiple operational domains: ERP, CRM, HR, performance management, ecommerce, and WhatsApp-based customer communication. The platform is designed around a multi-tenant architecture where each organisation operates within its own isolated context. I contribute backend functionality in Go across several of these modules as part of my role at IVERA.',
+      'ILORA is a multi-tenant AI ERP platform built with Go, React, and PostgreSQL. It consolidates ERP, CRM, HR, performance management, ecommerce, and WhatsApp-based customer communication into a single enterprise system. The platform is designed around a multi-tenant architecture where each organisation operates within its own isolated context. I contribute backend functionality in Go across several of these modules as part of my role at IVERA.',
     modules: [
       {
         name: 'Organisation / Tenant Management',

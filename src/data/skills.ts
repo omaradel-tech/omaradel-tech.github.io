@@ -121,7 +121,7 @@ export const engineeringDomains: EngineeringDomain[] = [
   {
     title: 'Enterprise',
     description: 'Enterprise SaaS and multi-tenant platforms',
-    items: ['ERP', 'CRM', 'HR', 'Multi-tenant SaaS', 'Filament Admin'],
+    items: ['AI ERP System (ILORA)', 'CRM / HR / Ecommerce', 'Multi-tenant SaaS', 'Filament Admin'],
     icon: 'Building2',
   },
   {
